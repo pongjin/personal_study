@@ -1,0 +1,71 @@
+선택자와 선언블록으로 구성
+<img src="https://wikidocs.net/images/page/85454/selector.PNG"> 참고
+선택자
+1. 단일 : tag(모든 태그에 적용), id(특정 태그에만 적용), class(특정 태그들에만 적용)
+<style>
+p <!-- 모든 p 태그에 대해 일괄 적용 -->
+   {
+     color:green;
+   }
+#core <!-- 이렇게 #을 붙여줘야함 -->
+   {
+       background-color:gray;
+    }
+.core <!-- 이렇게 .을 붙여줘야함 -->
+{
+   color:red;
+   text-align:center;          
+}
+</style>
+2. 그룹 : 여러 단일자를 콤마로 묶어서 사용
+h1, h2, p 
+{
+    text-align:center;
+    color:red;
+}
+3가지 방법
+1. inline : tag 내에 적용 <h1 style="font-family :gulim;"></h1>
+2. internal : 현재 문서 전체에 적용( 위 예시들)
+3. external: 아예 파일로 만들어서 적용 <link rel="stylesheet" type="text/css" href="파일명.css">
+
+<!-- 명령어들 -->
+background-color: 배경색
+color: 글자색
+border-style : 경계선 모양
+나머지는 링크에서..
+<a href="https://wikidocs.net/85458"></a>
+
+<!--Design & Layout -->
+<!img src="https://wikidocs.net/images/page/85458/layout2.PNG">
+#예시
+<style>
+div
+{
+  background-color:gray;
+  width:300px;
+  border:25px solid red; 25px크기의 빨간선
+  padding:25px;
+  margin:25px;
+  }
+</style>
+width
+border
+padding
+margin
+-top -right -bottom -left로 상세 조정
+
+<!--Font -->
+글꼴 지정
+font-family : 글꼴명;
+글자크기 지정
+font-size : 크기(숫자+단위);
+글꼴 스타일
+font-style : normal, italic;
+글꼴 굵기
+font-weight : normal, bold;
+글자간격 지정
+letter-spacing : 숫자px;
+글자 색상 지정
+color : 색상명 ;
+글자꾸밈효과 지정 
+text-decoration : none, underline, line-through, overline
